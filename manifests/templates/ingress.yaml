@@ -19,3 +19,4 @@ spec:
                 name: test-gradle               # Links to Service name dynamically
                 port:
                   number: 8080  # Links to service port dynamically
+# Links to service port dynamically
