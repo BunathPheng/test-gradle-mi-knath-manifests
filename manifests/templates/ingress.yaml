@@ -1,0 +1,21 @@
+---
+# Source: helm for kubernetes/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: test-gradle                  # Ingress name
+  labels:
+    app: test-gradle
+spec:
+  ingressClassName: nginx   # Optional ingressClass
+  rules:
+    - host: "test-gradle.smartops.space"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: test-gradle               # Links to Service name dynamically
+                port:
+                  number: 8080  # Links to service port dynamically
