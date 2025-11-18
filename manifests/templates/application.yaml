@@ -3,12 +3,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: "test-gradle"
+  name: "test-gradle-mi-knath-java-11-2"
   namespace: "argocd"
 spec:
   project: default
   source:
-    repoURL: https://github.com/BunathPheng/test-gradle-manifests.git
+    repoURL: https://github.com/BunathPheng/test-gradle-mi-knath-java-11-2-manifests.git
     targetRevision: HEAD
     path: manifests
   destination:
@@ -19,6 +19,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-      - CreateNamespace=true
-ptions:
       - CreateNamespace=true
