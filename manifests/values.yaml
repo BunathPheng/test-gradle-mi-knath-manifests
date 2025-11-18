@@ -1,7 +1,7 @@
 namespace: smartops-api
 
 image:
-  imageRepository: docker.io/phengbunath/test-gradle
+  imageRepository: docker.io/phengbunath/test-gradle-mi-knath
   tag: 1
 
 service:
