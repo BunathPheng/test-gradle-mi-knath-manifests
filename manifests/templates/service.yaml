@@ -3,15 +3,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: test-gradle-mi-knath          # Service name
+  name: test-gradle          # Service name
   labels:
-    app: test-gradle-mi-knath
+    app: test-gradle
 spec:
   type: ClusterIP   # Service type (ClusterIP, NodePort, LoadBalancer)
   selector:
-    app: test-gradle-mi-knath         # Matches Deployment labels
+    app: test-gradle         # Matches Deployment labels
   ports:
     - protocol: TCP
       port: 8080         # Service port
       targetPort: 8080  # Target container port
-8080  # Target container port
