@@ -3,22 +3,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-gradle-mi-knath-2
+  name: test-gradle-mi-knath-java-11-2
   labels:
-    app: test-gradle-mi-knath-2
+    app: test-gradle-mi-knath-java-11-2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test-gradle-mi-knath-2
+      app: test-gradle-mi-knath-java-11-2
   template:
     metadata:
       labels:
-        app: test-gradle-mi-knath-2
+        app: test-gradle-mi-knath-java-11-2
     spec:
       containers:
-        - name: test-gradle-mi-knath-2
-          image: docker.io/phengbunath/test-gradle-mi-knath-2:1
+        - name: test-gradle-mi-knath-java-11-2
+          image: docker.io/phengbunath/test-gradle-mi-knath-java-11-2:1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
