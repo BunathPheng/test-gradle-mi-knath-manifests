@@ -3,19 +3,20 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: test-gradle                  # Ingress name
+  name: test-gradle-mi-knath-2                  # Ingress name
   labels:
-    app: test-gradle
+    app: test-gradle-mi-knath-2
 spec:
   ingressClassName: nginx   # Optional ingressClass
   rules:
-    - host: "test-gradle.smartops.space"
+    - host: "test-gradle-mi-knath-2.smartops.space"
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: test-gradle               # Links to Service name dynamically
+                name: test-gradle-mi-knath-2               # Links to Service name dynamically
                 port:
                   number: 8080  # Links to service port dynamically
+nks to service port dynamically
