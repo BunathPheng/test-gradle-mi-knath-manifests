@@ -19,3 +19,4 @@ spec:
                 name: test-gradle-mi-knath               # Links to Service name dynamically
                 port:
                   number: 8080  # Links to service port dynamically
+80  # Links to service port dynamically
