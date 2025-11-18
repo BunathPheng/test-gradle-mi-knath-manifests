@@ -3,25 +3,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-gradle-mi-knath
+  name: test-gradle
   labels:
-    app: test-gradle-mi-knath
+    app: test-gradle
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test-gradle-mi-knath
+      app: test-gradle
   template:
     metadata:
       labels:
-        app: test-gradle-mi-knath
+        app: test-gradle
     spec:
       containers:
-        - name: test-gradle-mi-knath
-          image: docker.io/phengbunath/test-gradle-mi-knath:1
+        - name: test-gradle
+          image: docker.io/phengbunath/test-gradle:1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-Always
+licy: Always
           ports:
             - containerPort: 8080
