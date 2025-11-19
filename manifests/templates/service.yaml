@@ -14,4 +14,3 @@ spec:
     - protocol: TCP
       port: 8080         # Service port
       targetPort: 8080  # Target container port
- port
